@@ -49,7 +49,7 @@ def test_button_exist_2(browser):
 @allure.issue("SOL-001")
 @allure.testcase("SOL-001")
 @allure.label("owner", "hooch")
-@pytest.mark.parametrize("input_a, input_b, expected", [(1, 2, 3), (5, 5, 10), (0, 0, 0), (5, 6, 11), (0, 0, 0)])
+@pytest.mark.parametrize("input_a, input_b, expected", [(1, 2, 3), (5, 5, 10), (0, 0, 0), (5, 6, 11), (30, 20, 50)])
 def test_addition_parametrized(input_a, input_b, expected):
     result = input_a + input_b
     assert result == expected, f"Expected {expected}, but got {result}"
